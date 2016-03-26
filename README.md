@@ -45,15 +45,18 @@ To analyze the results of web applications run the following command
 > bash ProcessData/Analyze/runAllWeb.sh
 
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
 ProcessData/Analyze/Graph:
+
 Contains the data collected while running LeakSpot during the execution of Benchmarks.
 
 ProcessData/Analyze/GraphWeb:
-Contains the data collected while running LeakSpot during the execution of WebApplication.
 
+Contains the data collected while running LeakSpot during the execution of WebApplication.
 
 since the size of Data for all cases would be very large (about 7G) only samples
 are uploaded. More data could be provided upon request.
+
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 Data/BenchmarkRepeat13Times:
@@ -66,6 +69,7 @@ Contains the data collected while running LeakSpot during the execution of web a
 
 since the size of Data for all cases would be very large (more than 17G) only samples
 are uploaded. More data could be provided upon request.
+
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 visualizeVISJSLib: visualize the allocation-site graph.
