@@ -32,6 +32,18 @@ Proxy/profilerLib.js : It is the profiler library sent to the client.
 ProcessData:  Include the code used in Reporter for analyzing the data
               received from the client and finding the leaked objects.
 
+Examples:
+> bash ProcessData/Analyze/makeallcount.sh  ProcessData/Analyze/Graph/pdf
+> bash ProcessData/Analyze/makeallcdf.sh   ProcessData/Analyze/Graph/pdf
+> bash makeAllFigures  Graph
+
+To analyze the results of benchmarks run the following command
+> bash ProcessData/Analyze/runAll.sh
+
+
+To analyze the results of web applications run the following command
+> bash ProcessData/Analyze/runAllWeb.sh
+
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 visualizeVISJSLib: visualize the allocation-site graph.
