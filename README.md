@@ -80,3 +80,5 @@ for each benchmark or web application) and then press "visualize Graph". The oth
 inputs are optional.
 
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+ComparisonExperiment: This directory contains the result of comparison experiment, section 6.5 of the paper.
