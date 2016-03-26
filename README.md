@@ -3,16 +3,16 @@ Proxy: Include the code and command required for running the Proxy.
 cd Proxy/bin/
 > node runProxy.js
 
-The above command runs the proxy with default configurations
+The above command runs the proxy with default configurations.
 
 > node runProxy.js -h
 
-The above command Shows the possible arguments that you can use
+The above command Shows the possible arguments that you can use.
 
 Example:
 > node runProxy.js proxy_write_path  /tmp/proxy  
 
-Runs the proxy with the given write_path, make sure the directory given for the write_path exists
+Runs the proxy with the given write_path, make sure the directory given for the write_path exists.
 
 
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
@@ -21,7 +21,7 @@ Proxy/bin/scripts:  These scripts are used for copying or deleting all the possi
 
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-Proxy/node_modules/JSInstrument:  This is the library developed and used for instrumenting the JavaScript code
+Proxy/node_modules/JSInstrument:  This is the library developed and used for instrumenting the JavaScript code.
 
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
@@ -34,7 +34,7 @@ ProcessData:  Include the code used in Reporter for analyzing the data
 
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-visualizeVISJSLib: visualize the allocation-site graph
+visualizeVISJSLib: visualize the allocation-site graph.
 
 To do so, go to:
 /home/masoomeh/Research/DevelopedTools/SPE/LeakSpot/visualizeVISJSLib/DRAW/index.html

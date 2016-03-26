@@ -1,0 +1,12 @@
+nodes = [
+    {id: 1, value: 2, label:'Algie', title: 'Algie (2 years old)'},
+    {id: 2, value: 31, label: 'Alston', title: 'Alston (31 years old)'},
+    {id: 3, value: 12, label: 'Barney', title: 'Barney (12 years old)'},
+    {id: 4, value: 16, label: 'Coley', title: 'Coley (16 years old)'},
+    {id: 5, value: 17, label: 'Grant', title: 'Grant (17 years old)'},
+    {id: 6, value: 15, label: 'Langdon', title: 'Langdon (15 years old)'},
+    {id: 7, value: 6, label: 'Lee', title: 'Lee (6 years old)'},
+    {id: 8, value: 5, label: 'Merlin', title: 'Merlin (5 years old)'},
+    {id: 9, value: 30, label: 'Mick', title: 'Mick (30 years old)'},
+    {id: 10, value: 18, label: 'Tod', title: 'Tod (18 years old)'}
+]

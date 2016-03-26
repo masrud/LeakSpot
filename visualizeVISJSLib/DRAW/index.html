@@ -1,0 +1,99 @@
+<html>
+<head>
+<script>
+// Check for the various File API support.
+if (window.File && window.FileReader && window.FileList && window.Blob) {
+	// Great success! All the File APIs are supported.
+} else {
+	alert('The File APIs are not fully supported in this browser.');
+}
+</script>
+</head>
+<body>
+<h3>Enter the nodes file  <br></H3>
+<input type="file" id="files" name="files[]" multiple />
+<output id="list"></output> 
+<BR> <BR>
+
+<h3>Enter the edges file  <br></H3>
+<input type="file" id="edgesfile" name="files[]" multiple />
+<output id="list"></output> 
+<BR> <BR>
+
+
+<script>
+var nodesFile;
+var edgesFile;
+var fileList=[];
+
+
+function sendToPopup(popup, nodes_jsondata, edges_jsondata)
+{
+	popup.postMessage({ type: "graph", nodes: nodes_jsondata, edges: edges_jsondata }, "*" );
+}
+
+function generateFigure(nodes_jsondata, edges_jsondata)
+{
+	//TODO in manifest.json for security
+	var popup = window.open('09_sizing.html');
+	console.log("..............post message ....................");
+	setTimeout(function(){  sendToPopup(popup, nodes_jsondata, edges_jsondata)}, 3000);
+}
+
+function makeFigure(nodes_file, edges_file){
+	generateFigure( nodes_file, edges_file );
+}
+
+
+function handleFileSelect(evt) {
+	var files = evt.target.files; // FileList object
+	console.log("-----------");
+
+	// files is a FileList of File objects. List some properties.
+	var output = [];
+	for (var i = 0, f; f = files[i]; i++) {
+		output.push('<li><strong>', escape(f.name), '</strong> (', f.type || 'n/a', ') - ',
+				f.size, ' bytes, last modified: ',
+				f.lastModifiedDate ? f.lastModifiedDate.toLocaleDateString() : 'n/a',
+				'</li>');
+		var reader = new FileReader();
+		reader.onload =  function(theFile) {
+	//		console.log(theFile);
+	//		console.log("*******************************************");
+			nodesFile = theFile.target.result; 
+
+		};
+		reader.readAsText(f);
+	}
+	document.getElementById('list').innerHTML = '<ul>' + output.join('') + '</ul>';
+}
+
+document.getElementById('files').addEventListener('change', handleFileSelect, false);
+document.getElementById('edgesfile').addEventListener('change', readEdgesFile, false);
+
+function readEdgesFile(evt) {
+    var files = evt.target.files;
+    for (var i = 0, f; f = files[i]; i++) {
+        var reader = new FileReader();
+        reader.onload = function(theFile) {
+     //       console.log("...................");
+      //      console.log(theFile);
+            edgesFile = theFile.target.result; 
+        }
+        reader.readAsText(f);
+    }
+}
+
+function formVisualGraph(frm) {
+	makeFigure( nodesFile, edgesFile );
+}
+
+</script>
+
+<h3>Enter the object name to filter <br></H3>
+<p>Object Name: <INPUT TYPE="TEXT" NAME="objectName">
+<input TYPE="Button" Value="Visualize Graph" onClick="formVisualGraph(this.form)">
+</form>
+
+</body>
+</html>
