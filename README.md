@@ -9,10 +9,9 @@ The above command runs the proxy with default configurations.
 
 The above command Shows the possible arguments that you can use.
 
-Example:
 > node runProxy.js proxy_write_path  /tmp/proxy  
 
-Runs the proxy with the given write_path, make sure the directory given for the write_path exists.
+The above command runs the proxy with the given write_path. Make sure the directory used for the write_path exists.
 
 
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
@@ -59,7 +58,7 @@ are uploaded. More data could be provided upon request.
 
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-Data/BenchmarkRepeat13Times:
+Data/BenchmarkRepeat:
 
 Contains the data collected while running LeakSpot during the execution of Benchmarks.
 
