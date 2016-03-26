@@ -1,0 +1,71 @@
+<div ><script type="text/javascript" src="/profilerLib.js"></script><template>
+<style>
+:host {
+  display: inline-block;
+  height: 24px;
+  position: relative;
+  width: 24px;
+}
+@-webkit-keyframes animPos {
+  0% { -webkit-transform: translate(-98%, 0); }
+  100% { -webkit-transform: translate(98%, 0); }
+}
+@-webkit-keyframes animZOrder {
+  0% { z-index: 100; }
+  100% { z-index: 1; }
+}
+.outer {
+  -webkit-animation: animZOrder 3520ms linear infinite;
+  height: 37.5%;
+  left: 50%;
+  margin-left: -18.75%;
+  margin-top: -18.75%;
+  position: absolute;
+  top: 50%;
+  width: 37.5%;
+}
+.inner {
+  -webkit-animation: animPos 880ms cubic-bezier(0.445, 0.05, 0.55, 0.95)
+      infinite alternate;
+  -webkit-transform: rotate(90deg);
+  border-radius: 50%;
+  height: 100%;
+  position: absolute;
+  width: 100%;
+}
+.ball0 {
+  -webkit-animation-delay: 2640ms;
+  -webkit-transform: rotate(45deg);
+}
+.ball1 {
+  -webkit-animation-delay: 1760ms;
+  -webkit-transform: rotate(135deg);
+}
+.ball2 {
+  -webkit-transform: rotate(225deg);
+}
+.ball3 {
+  -webkit-animation-delay: 880ms;
+  -webkit-transform: rotate(315deg);
+}
+.ball0 .inner { background: linear-gradient(315deg, #05d, #07f, #07f); }
+.ball1 .inner { background: linear-gradient(225deg, #d00, #e33, #f75); }
+.ball2 .inner { background: linear-gradient(90deg, #074, #094, #5b5); }
+.ball3 .inner { background: linear-gradient(0deg, #fa3, #fc0, #fd6); }
+</style>
+<div class="outer ball0"><div class="inner"></div></div>
+<div class="outer ball1"><div class="inner"></div></div>
+<div class="outer ball2"><div class="inner"></div></div>
+<div class="outer ball3"><div class="inner"></div></div>
+</template>
+
+<script>JSProf.LFC(42099, JSProf.LNF(42098, function () {
+    var ownerDoc = JSProf.LGD(42086, document.currentScript, 'ownerDocument').ownerDocument;
+    var proto = JSProf.LMC(42088, Object, 'create').create(JSProf.LGD(42087, HTMLElement, 'prototype').prototype);
+    JSProf.LPD(42094, proto, 'createdCallback').createdCallback = JSProf.LRSP(42094, JSProf.LNF(42093, function () {
+        var templ = JSProf.LMC(42089, ownerDoc, 'querySelector').querySelector('template');
+        JSProf.LMC(42092, JSProf.LMC(42090, this, 'createShadowRoot').createShadowRoot(), 'appendChild').appendChild(JSProf.LMC(42091, templ.content, 'cloneNode').cloneNode(true));
+    }, 12));
+    JSProf.LPD(42097, window, 'DoodleNotifier').DoodleNotifier = JSProf.LRSP(42097, JSProf.LMC(42096, document, 'registerElement').registerElement('doodle-notifier', JSProf.LNE(42095, { prototype: proto }, 11)));
+}, 12), false)();</script>
+</div>

@@ -1,0 +1,40 @@
+<div ><script type="text/javascript" src="/profilerLib.js"></script>
+<html lang="en" data-framework="dojo">
+	<head>
+		<meta charset="utf-8">
+		<title>Dojo • TodoMVC</title>
+		<link rel="stylesheet" href="bower_components/todomvc-common/base.css">
+		<link rel="stylesheet" href="css/app.css">
+	</head>
+	<body>
+		<section id="todoapp" data-dojo-type="todo/app18"></section>
+		<footer id="info">
+			<p>Double-click to edit a todo</p>
+			<p>Created by <a href="http://jamesthom.as/">James Thomas</a> and <a href="https://github.com/edchat">Ed Chatelain</a></p>
+			<p>Part of <a href="http://todomvc.com">TodoMVC</a></p>
+		</footer>
+
+		<script src="bower_components/todomvc-common/base.js"></script>
+		<script>require = JSProf.LWU(12, JSProf.I(typeof require === 'undefined' ? undefined : require), JSProf.LNE(11, {
+    async: true,
+    parseOnLoad: true,
+    locale: 'en',
+    debug: true,
+    paths: JSProf.LNE(6, { dijit: '../dijit' }, 11),
+    deps: JSProf.LNE(7, [
+        'dojo/parser',
+        'dojo/domReady!'
+    ], 10),
+    mvc: JSProf.LNE(8, { debugBindings: true }, 11),
+    packages: JSProf.LNE(10, [JSProf.LNE(9, {
+            name: 'todo',
+            location: '../../js/todo'
+        }, 11)], 10)
+}, 11));</script>
+        <script src="dojo-release-1.10.2-src/dojo/dojo.js"></script>
+        <!--
+        <script>JSProf.LFC(4, require, false)(JSProf.LNE(2, ['todo/app18'], 10), JSProf.LNF(3, function () {
+}, 12));</script> -->
+	</body>
+</html>
+</div>

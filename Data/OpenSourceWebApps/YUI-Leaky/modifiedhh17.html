@@ -1,0 +1,74 @@
+<div ><script type="text/javascript" src="/profilerLib.js"></script>
+<html lang="en" data-framework="yui">
+	<head>
+		<meta charset="utf-8">
+		<title>YUI • TodoMVC</title>
+		<link rel="stylesheet" href="bower_components/todomvc-common/base.css">
+	</head>
+	<body>
+		<section id="todoapp">
+			<header id="header">
+				<h1>todos</h1>
+				<input id="new-todo" placeholder="What needs to be done?" autofocus>
+			</header>
+			<section id="main">
+				<input id="toggle-all" type="checkbox">
+				<label for="toggle-all">Mark all as complete</label>
+				<ul id="todo-list"></ul>
+			</section>
+			<footer id="footer"></footer>
+		</section>
+		<footer id="info">
+			<p>Double-click to edit a todo</p>
+			<p>Created by
+				<a href="https://github.com/clarle">Clarence Leung</a> and
+				<a href="https://twitter.com/ericf">Eric Ferraiuolo</a>
+			</p>
+			<p>Part of <a href="http://todomvc.com">TodoMVC</a></p>
+		</footer>
+		<script src="bower_components/todomvc-common/base.js"></script>
+		<script type="text/x-handlebars-template" id="item-template">
+			<div class="view">
+				<input class="toggle" type="checkbox" {{#if completed}}checked{{/if}}>
+				<label>{{title}}</label>
+				<button class="destroy"></button>
+			</div>
+			<input class="edit" value="{{title}}">
+		</script>
+		<script type="text/x-handlebars-template" id="stats-template">
+			<span id="todo-count"><strong>{{remaining}}</strong> {{pluralize remaining "item"}} left</span>
+			<ul id="filters">
+				<li>
+					<a class="selected" href="#/">All</a>
+				</li>
+				<li>
+					<a href="#/active">Active</a>
+				</li>
+				<li>
+					<a href="#/completed">Completed</a>
+				</li>
+			</ul>
+			{{#if completed}}
+			<button id="clear-completed">Clear completed ({{completed}})</button>
+			{{/if}}
+		</script>
+		<script src="bower_components/todomvc-common/base.js"></script>
+		<script src="js/lib/yui.js"></script>
+		<script>JSProf.LMC(121748, JSProf.LFC(121744, YUI, false)(JSProf.LNE(121743, {
+    groups: JSProf.LNE(121742, {
+        'todo-mvc': JSProf.LNE(121741, {
+            base: './js/',
+            modules: JSProf.LNE(121740, {
+                'todo': JSProf.LNE(121736, { path: 'models/todo.js' }, 11),
+                'todo-list': JSProf.LNE(121737, { path: 'models/todolist.js' }, 11),
+                'todo-view': JSProf.LNE(121738, { path: 'views/todoview.js' }, 11),
+                'todo-app': JSProf.LNE(121739, { path: 'app.js' }, 11)
+            }, 11)
+        }, 11)
+    }, 11)
+}, 11)), 'use').use('todo-app', JSProf.LNF(121747, function (Y) {
+    JSProf.LNE(121746, new (JSProf.LMC(121745, Y.TodoMVC, 'TodoApp')).TodoApp(), 40);
+}, 12));</script>
+	</body>
+</html>
+</div>

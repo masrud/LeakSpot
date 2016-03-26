@@ -1,0 +1,11 @@
+edges = [   { from: 10, to: 9, style: 'arrow'},
+  { from: 9, to: 8, style: 'arrow'},
+  { from: 8, to: 7, style: 'arrow'},
+  { from: 7, to: 6, style: 'arrow'},
+  { from: 6, to: 5, style: 'arrow'},
+  { from: 5, to: 4, style: 'arrow'},
+  { from: 4, to: 3, style: 'arrow'},
+  { from: 3, to: 2, style: 'arrow'},
+  { from: 2, to: 1, style: 'arrow'},
+  { from: 1, to: 0, style: 'arrow'},
+  { from: 12, to: 11, style: 'arrow'} ] 

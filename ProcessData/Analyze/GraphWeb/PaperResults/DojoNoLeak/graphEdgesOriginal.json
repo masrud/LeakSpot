@@ -1,0 +1,11 @@
+edges = [   { from: 37293, to: 37299, style: 'arrow', label: 7725},
+  { from: 37299, to: 37304, style: 'arrow', label: 7725},
+  { from: 37304, to: 37307, style: 'arrow', label: 7725},
+  { from: 37307, to: 37312, style: 'arrow', label: 7725},
+  { from: 37312, to: 37351, style: 'arrow', label: 7725},
+  { from: 37351, to: 37356, style: 'arrow', label: 7725},
+  { from: 37356, to: 37361, style: 'arrow', label: 7725},
+  { from: 37361, to: 37371, style: 'arrow', label: 7725},
+  { from: 37371, to: 37393, style: 'arrow', label: 7725},
+  { from: 37393, to: 37424, style: 'arrow', label: 7725},
+  { from: 37453, to: 37457, style: 'arrow', label: 7725} ] 

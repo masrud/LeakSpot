@@ -1,0 +1,1 @@
+(function(){if(google.timers&&google.timers.load.t){var a=function(){google.timers&&google.timers.load.t&&(google.timers.load.t.ol=google.time(),google.csiReport&&google.csiReport())};window.addEventListener?window.addEventListener("load",a,!1):window.attachEvent&&window.attachEvent("onload",a);google.timers.load.t.prt=google.time()};})();

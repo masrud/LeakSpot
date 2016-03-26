@@ -1,0 +1,13 @@
+nodes = [  { id: 34898, label: '34898', color:  'pink', shape: 'circle' },
+ { id: 34904, label: '34904', color:  'pink', shape: 'circle' },
+ { id: 34909, label: '34909', color:  'pink', shape: 'circle' },
+ { id: 34912, label: '34912', color:  'pink', shape: 'circle' },
+ { id: 34917, label: '34917', color:  'pink', shape: 'circle' },
+ { id: 34956, label: '34956', color:  'pink', shape: 'circle' },
+ { id: 34961, label: '34961', color:  'pink', shape: 'circle' },
+ { id: 34966, label: '34966', color:  'pink', shape: 'circle' },
+ { id: 34976, label: '34976', color:  'pink', shape: 'circle' },
+ { id: 34998, label: '34998', color:  'pink', shape: 'circle' },
+ { id: 35029, label: '35029', color:  'pink', shape: 'circle' },
+ { id: 35058, label: '35058', color:  'pink', shape: 'circle' },
+ { id: 35062, label: '35062', color:  'pink', shape: 'circle' } ] 
